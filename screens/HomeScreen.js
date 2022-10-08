@@ -37,7 +37,9 @@ export default function HomeScreen() {
         </View>
         <Icons.AdjustmentsHorizontalIcon color="#00CCBB"/>
       </View> 
-      
+
     </SafeAreaView>
+
+    
   )
 }
