@@ -1,4 +1,4 @@
-import { View, Text, Image, TextInput } from 'react-native'
+import { View, Text, Image, TextInput, ScrollView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { styled } from "nativewind";
 import { useNavigation } from '@react-navigation/native';
@@ -7,6 +7,8 @@ import { UserIcon} from 'react-native-heroicons/outline'
 // import {ChevronDownIcon} from 'react-native-heroicons/outline'
 // import { SparklesIcon } from "react-native-heroicons/solid";
 import * as Icons from "react-native-heroicons/outline";
+import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 export default function HomeScreen() {
   const navigation = useNavigation()
@@ -37,8 +39,19 @@ export default function HomeScreen() {
         </View>
         <Icons.AdjustmentsHorizontalIcon color="#00CCBB"/>
       </View> 
+      {/*Body*/}
+      <ScrollView className="bg-gray-100" contentContainerStyle={{
+        paddingBottom:100
+      }}>
+        {/*Categories*/}
+        <Categories/>
+        {/*Featured Row*/}
+        <FeaturedRow title="featured" description="Paid placement from our Partners" featuredCategory="Featured"/>
+        <FeaturedRow title="featured" description="Paid placement from our Partners" featuredCategory="Featured"/>
+        <FeaturedRow title="featured" description="Paid placement from our Partners" featuredCategory="Featured"/>
+
+      </ScrollView>
 
     </SafeAreaView>
-
   )
 }
