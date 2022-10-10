@@ -46,9 +46,9 @@ export default function HomeScreen() {
         {/*Categories*/}
         <Categories/>
         {/*Featured Row*/}
-        <FeaturedRow title="featured" description="Paid placement from our Partners" featuredCategory="Featured"/>
-        <FeaturedRow title="featured" description="Paid placement from our Partners" featuredCategory="Featured"/>
-        <FeaturedRow title="featured" description="Paid placement from our Partners" featuredCategory="Featured"/>
+        <FeaturedRow title="featured" description="Paid placement from our Partners" id="1"/>
+        <FeaturedRow title="featured" description="Paid placement from our Partners" id="2"/>
+        <FeaturedRow title="featured" description="Paid placement from our Partners" id="3"/>
 
       </ScrollView>
 
